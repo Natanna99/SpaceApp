@@ -55,7 +55,7 @@ const Header = ({ setSearch, value }) => {
     <ContainerHeader>
       <div className="menuApp">
         <IconeMenuApp />
-        <img src="/public/image/logo.png" alt="Logo" />
+        <img src="image/logo.png" alt="Logo" />
       </div>
 
       <InputHearder setSearch={setSearch} value={value} />
