@@ -10,26 +10,26 @@ const ContainerInput = styled.div`
 
   .iconInput {
     color: #c98cf1;
-    font-size: 20px;
+    font-size: 1.25rem;
     position: absolute;
-    right: 48px;
+    right: 1.25rem;
     top: 32%;
   }
 `;
 
 const Input = styled.input`
-  width: 90%;
-  height: 55px;
-  border: 2px solid transparent;
+  width: 100%;
+  height: 3.438rem;
+  border: 0.125rem solid transparent;
   border-color: #c98cf1;
-  border-radius: 10px;
-  padding: 0 10px;
+  border-radius: 0.625rem;
+  padding: 0 0.625rem;
   background-color: transparent;
   box-sizing: border-box;
   color: #d9d9d9;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 
   &:focus {
     border-color: #7b78e5;
@@ -42,13 +42,19 @@ const Input = styled.input`
 
   @media screen and (min-width: 768px) {
     width: 100%;
+    font-size: 1.25rem;
   }
 `;
 
-const InputHearder = ({ props }) => {
+const InputHearder = ({ setSearch, value }) => {
   return (
     <ContainerInput>
-      <Input type="text" placeholder="O que você procura?" {...props} />
+      <Input
+        type="text"
+        placeholder="O que você procura?"
+        value={value}
+        onChange={(e) => setSearch(e.target.value)}
+      />
       <FontAwesomeIcon
         icon="fa-solid fa-magnifying-glass"
         className="iconInput"

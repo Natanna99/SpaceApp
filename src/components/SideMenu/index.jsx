@@ -8,14 +8,14 @@ const ContainerList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 15px;
+  gap: 0.938rem;
 `;
 
 const ContainerNav = styled.nav`
   display: flex;
-  width: 200px;
-  height: 270px;
-  padding: 20px;
+  width: 12.5rem;
+  height: 16.875rem;
+  padding: 0.625rem;
   background: linear-gradient(
     174.61deg,
     #041833 4.16%,
@@ -32,7 +32,7 @@ const ButtonClose = styled.div`
   color: #fff;
   position: relative;
   right: 0;
-  left: 15px;
+  left: 0.938rem;
 
   @media screen and (min-width: 768px) {
     display: none;

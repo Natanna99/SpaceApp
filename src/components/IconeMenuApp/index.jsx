@@ -8,7 +8,7 @@ const ContainerIconMenuApp = styled.div`
 
   .iconMenu {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
   }
 

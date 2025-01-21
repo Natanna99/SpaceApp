@@ -7,10 +7,10 @@ const ContainerHeader = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 
   img {
-    max-width: 112px;
+    max-width: 7rem;
   }
 
   .menuApp {
@@ -18,18 +18,18 @@ const ContainerHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
-    gap: 90px;
+    padding: 1.25rem 0;
+    gap: 5.625rem;
 
     img {
-      max-width: 200px;
+      max-width: 12.5rem;
     }
 
     .menuApp {
@@ -40,7 +40,7 @@ const ContainerHeader = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    gap: 120px;
+    gap: 7.5rem;
 
     .menuApp {
       align-items: center;
@@ -50,7 +50,7 @@ const ContainerHeader = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = ({ setSearch, value }) => {
   return (
     <ContainerHeader>
       <div className="menuApp">
@@ -58,7 +58,7 @@ const Header = () => {
         <img src="public/image/logo.png" alt="Logo" />
       </div>
 
-      <InputHearder />
+      <InputHearder setSearch={setSearch} value={value} />
     </ContainerHeader>
   );
 };
