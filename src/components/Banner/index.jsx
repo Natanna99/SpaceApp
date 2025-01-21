@@ -43,7 +43,7 @@ const TextBanner = styled.h3`
 const Banner = () => {
   return (
     <ContainerBanner>
-      <ImgBanner src="./public/image/atmosfera.webp" alt="Banner" />
+      <ImgBanner src="image/atmosfera.webp" alt="Banner" />
       <TextBanner>A galeria mais completa de fotos do espaço!</TextBanner>
     </ContainerBanner>
   );

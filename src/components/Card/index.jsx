@@ -63,7 +63,7 @@ const Card = ({ img, title, font, favorite, functionFavorite }) => {
   return (
     <>
       <ContainerCard>
-        <ImgCard src={`./public${img}`} />
+        <ImgCard src={`${img}`} />
         <FooterCard>
           <TextCard>{title}</TextCard>
           <ContainerIcon>
@@ -81,7 +81,7 @@ const Card = ({ img, title, font, favorite, functionFavorite }) => {
 
       {open && (
         <Modal isOpen={open} onClose={() => setOpen(false)}>
-          <ImgCard src={`./public${img}`} />
+          <ImgCard src={`${img}`} />
           <FooterCard>
             <TextCard>{title}</TextCard>
             <ContainerIcon>
