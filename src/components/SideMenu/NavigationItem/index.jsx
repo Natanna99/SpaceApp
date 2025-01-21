@@ -4,11 +4,11 @@ import styled from "styled-components";
 const ItemList = styled.li`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   cursor: pointer;
 
   a {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: ${(props) => (props.active ? "#7b78e5" : "#fff")};
     text-decoration: none;
     font-family: ${(props) => (props.active ? "GandhiBold" : "")};
@@ -17,13 +17,13 @@ const ItemList = styled.li`
   .iconMenu,
   .iconMenuActive {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
-    border-radius: 10px;
+    width: 1.563rem;
+    height: 1.563rem;
+    border-radius: 0.625rem;
     background: ${(props) => (props.active ? "#7b78e5" : "#04244f")};
-    padding: 8px;
+    padding: 0.5rem;
   }
 `;
 
